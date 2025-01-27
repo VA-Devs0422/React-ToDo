@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Lacquer&family=Parkinsans:wght@300..800&display=swap");
+
+body{
+  margin: 0;
+  padding: 0;
+}
+.mainBody {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("https://images.unsplash.com/photo-1642355008521-236f1d29d0a8?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: #1c1c1ef5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Parkinsans", sans-serif;
+    height: 80%;
+    width: 70%;
+    border-radius: 30px;
+    border: 1.5px solid #323232;
+    box-shadow: 0 0 15px 10px rgb(0 0 0);
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+form {
+    background-color: #232327f5;
+    border: 1.5px solid #323232;
+    border-radius: 30px;
+    width: 85%;
+    height: 70px;
+    text-align: center;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input#inp {
+    width: 85%;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    padding-left: 25px;
+    color: white;
+    outline: none;
+}
+
+input.btn {
+    all: unset;
+    width: 20%;
+    font-size: 18px;
+    color: #000000;
+    border: 1px solid #ededed;
+    background-color: #ededed;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.bottom {
+    width: 100%;
+    height: 70%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #121212 transparent;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+ol.list {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 0;
+    gap: 15px;
+}
+
+li.listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    background-color: #232327f5;
+    border: 1.5px solid #323232;
+    border-radius: 30px;
+    height: 60px;
+}
+
+.leftOfItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+button.delete {
+    all: unset;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.delete:hover {
+    background-color: #c53838;
+    box-shadow: 0px 5px 10px 0px rgb(85 0 0 / 50%);
+}
+
+img.btnImg {
+    height: 20px;
+}
+
+/* Hide the default checkbox */
+.leftOfItem input[type="checkbox"] {
+    display: none;
+}
+
+/* Custom checkbox styling */
+.leftOfItem span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 2px solid #fff; /* White border for the circle */
+    border-radius: 50%; /* Makes it round */
+    background-color: transparent; /* Transparent background */
+    position: relative;
+    cursor: pointer; /* Changes cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Checked state */
+.leftOfItem input[type="checkbox"]:checked + span {
+    background-color: #6b6b6b; /* Background color when checked */
+}
+
+.leftOfItem input[type="checkbox"]:checked + span::after {
+    content: "✔";
+    color: white; /* White tick */
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hover effect */
+.leftOfItem span:hover {
+    transform: scale(1.1); /* Slightly enlarges on hover */
+}
+
+
+/* .bottom{
+    border: 2px dotted black;
+    border-top: 2px dotted white;
+    border-bottom: 2px dotted white;
+    border-left: 2px dotted white;
+    width: 50%;
+    height: 80%;
+    margin: 8px;
+    text-align: center;
+    overflow-y:scroll;
+    border-radius: 5px;
+} */
+
+/* .bottom::-webkit-scrollbar-thumb{
+    color: black;
+} */
+
+/* input{
+    background-color:rgb(103, 108, 108);
+    width: 50%;
+    outline: none;
+    border: 2px hidden white;
+    border-bottom: 2px dashed white;
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+} */
+/* input:default{
+    background-color:rgb(103, 108, 108);
+    width: 50%;
+    outline: none;
+    border: 2px hidden white;
+    border-bottom: 2px dashed white;
+    text-align: center;
+    margin-bottom: 5px;
+    height: 50px;
+} */
+/* input:focus{
+    height: 30px;
+    transition: height 1s ease;
+    border: none;
+    background-color:rgb(103, 108, 108);
+} */
+/* input:hover{
+    height: 30px;
+    transition: height 1s ease;
+    background-color:rgb(103, 108, 108);
+} */
+/* input::placeholder{
+    color: white;
+    font-family: "Parkinsans", sans-serif;
+
+} */
+
+/* .btn{
+    width: 40%;
+    height: 30px;
+    margin-top: 10px;
+    outline: none;
+    background-color: rgb(103, 108, 108);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-family: "Parkinsans", sans-serif;
+
+} */
+
+/* .container{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} */
+
+/* .elem{
+    width: 90%;
+    height: 10%;
+    border: 2px dotted white;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+} */
+/* .btn2{
+    width: 80px;
+    height: 30px;
+} */
+/* ol{
+    width:90% ;
+} */
+
+/* .listItem{
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    text-decoration:underline;
+} */
+
+/* li{
+    margin-left: 5px;
+    list-style: none;
+    color: white;
+} */
+
+/* .delete{
+    margin-right: 5px;
+    height: 30px;
+    background-color: rgb(103, 108, 108);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+} */
+
+/* .delete:hover{
+    background-color: rgb(81, 85, 85);
+    transition: 0.5s;
+    cursor: pointer;
+    width: 60px;
+} */
+
+/* .btn:hover{
+    background-color: rgb(81, 85, 85);
+    transition: 0.5s;
+    cursor: pointer;
+    width: 200px;
+} */
+
+/* h1{
+    text-decoration: underline;
+} */
